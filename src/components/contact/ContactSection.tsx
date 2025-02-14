@@ -1,4 +1,6 @@
+ 'use client'
 import ContactForm from "../form/ContactForm";
+ 
 import DivAnimateX from "../utils/DivAnimateX";
 type Props = {
   style?: string;

@@ -1,4 +1,6 @@
+ 'use client'
 import AuthForm from "../form/AuthForm";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
 
 type Props = {

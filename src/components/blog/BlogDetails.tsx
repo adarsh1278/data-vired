@@ -1,4 +1,6 @@
+ 'use client'
 import ImageAnimate from "../utils/ImageAnimate";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
 type Props = {
   img: string;

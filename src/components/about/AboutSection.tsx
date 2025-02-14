@@ -1,4 +1,6 @@
+ 'use client'
 import { Link } from "react-router-dom";
+ 
 import DivAnimateX from "../utils/DivAnimateX";
 
 const AboutSection = () => {

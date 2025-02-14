@@ -1,5 +1,8 @@
+ 'use client'
 import { Link } from "react-router-dom";
+ 
 import { courseData } from "../../data/data";
+ 
 import { CourseType } from "../../types";
 
 type Props = {

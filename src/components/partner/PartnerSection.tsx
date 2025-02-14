@@ -1,7 +1,12 @@
+ 'use client'
 import { partnerLogos } from "../../data/data";
+ 
 import { Autoplay } from "swiper/modules";
+ 
 import { Swiper, SwiperSlide } from "swiper/react";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
+ 
 import { Link } from "react-router-dom";
 type Props = {
   style?: string;

@@ -1,4 +1,6 @@
+ 'use client'
 import { TeamType } from "../../types";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
 type Props = {
   teamInfo: TeamType;

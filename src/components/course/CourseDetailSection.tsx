@@ -1,12 +1,22 @@
+ 'use client'
 import { useState } from "react";
+ 
 import OverviewContent from "./OverviewContent";
+ 
 import CurriculumContent from "./CurriculumContent";
+ 
 import InstructorContent from "./InstructorContent";
+ 
 import ReviewContent from "./ReviewContent";
+ 
 import CourseDetailSidebar from "./CourseDetailSidebar";
+ 
 import { CourseType } from "../../types";
+ 
 import ImageAnimate from "../utils/ImageAnimate";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
+ 
 import DivAnimateX from "../utils/DivAnimateX";
 type Props = {
   courseInfo: CourseType;

@@ -1,3 +1,4 @@
+'use client'
 const InstructorContent = () => {
   return (
     <div className="overview text-center">

@@ -1,7 +1,12 @@
+ 'use client'
 import { Link } from "react-router-dom";
+ 
 import { courseData } from "../../data/data";
+ 
 import { CourseType } from "../../types";
+ 
 import DivAnimateX from "../utils/DivAnimateX";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
 type Props = {
   showHeader?: boolean;

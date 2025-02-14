@@ -1,4 +1,6 @@
+ 'use client'
 import { toggleModaClose } from "../../redux/features/videoModalSlice";
+ 
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 
 const VideoModal = () => {

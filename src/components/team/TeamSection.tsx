@@ -1,6 +1,10 @@
+ 'use client'
 import { Link } from "react-router-dom";
+ 
 import { teamData } from "../../data/data";
+ 
 import { TeamType } from "../../types";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
 
 const TeamSection = () => {

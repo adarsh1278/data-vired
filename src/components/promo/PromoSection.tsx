@@ -1,5 +1,8 @@
+ 'use client'
 import { Link } from "react-router-dom";
+ 
 import DivAnimateX from "../utils/DivAnimateX";
+ 
 import NumberCounter from "../utils/NumberCounter";
 
 const PromoSection = () => {

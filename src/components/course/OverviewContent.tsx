@@ -1,3 +1,4 @@
+'use client'
 const OverviewContent = () => {
   return (
     <div className="overview">

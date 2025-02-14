@@ -1,3 +1,4 @@
+'use client'
 const CurriculumContent = () => {
   return (
     <div className="overview">

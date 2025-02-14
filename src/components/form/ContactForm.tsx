@@ -1,3 +1,4 @@
+'use client'
 const ContactForm = () => {
   return (
     <form className="form">

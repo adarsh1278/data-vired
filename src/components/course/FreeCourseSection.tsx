@@ -1,3 +1,4 @@
+ 'use client'
 import DivAnimateY from "../utils/DivAnimateY";
 
 const FreeCourseSection = () => {

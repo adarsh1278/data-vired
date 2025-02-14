@@ -1,14 +1,26 @@
+ 'use client'
 import { BlogType } from "../../types";
+ 
 import BlogDetails from "./BlogDetails";
+ 
 import BlogAuthor from "./BlogAuthor";
+ 
 import BlogComments from "./BlogComments";
+ 
 import BlogCommentForm from "../form/BlogCommentForm";
+ 
 import BlogSearchbar from "./BlogSearchbar";
+ 
 import BlogNewsletter from "../newsletter/BlogNewsletter";
+ 
 import PopularBlogPosts from "./PopularBlogPosts";
+ 
 import BlogSocials from "./BlogSocials";
+ 
 import BlogCategory from "./BlogCategory";
+ 
 import BlogTags from "./BlogTags";
+ 
 import BlogBanner from "./BlogBanner";
 type Props = {
   blogInfo: BlogType;

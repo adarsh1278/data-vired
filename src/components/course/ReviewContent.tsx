@@ -1,3 +1,4 @@
+'use client'
 const ReviewContent = () => {
   return (
     <div className="client-review">

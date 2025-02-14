@@ -1,4 +1,6 @@
+ 'use client'
 import DivAnimateX from "../utils/DivAnimateX";
+ 
 import NumberCounter from "../utils/NumberCounter";
 
 const BannerSection = () => {

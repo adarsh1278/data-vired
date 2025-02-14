@@ -1,6 +1,10 @@
+ 'use client'
 import { Link } from "react-router-dom";
+ 
 import { blogData } from "../../data/data";
+ 
 import { BlogType } from "../../types";
+ 
 import DivAnimateX from "../utils/DivAnimateX";
 
 const PopularBlogPosts = () => {

@@ -1,5 +1,8 @@
+ 'use client'
 import { useForm, SubmitHandler } from "react-hook-form";
+ 
 import { Link } from "react-router-dom";
+ 
 import { toast } from "react-toastify";
 
 type Props = {

@@ -1,3 +1,5 @@
+
+'use client'
 const FooterCopyright = () => {
   return (
     <div className="foot_copy">

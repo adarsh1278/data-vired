@@ -1,5 +1,8 @@
+ 'use client'
 import { Link } from "react-router-dom";
+ 
 import { blogData } from "../../data/data";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
 type Props = {
   showHeader?: boolean;

@@ -1,4 +1,6 @@
+ 'use client'
 import NumberCounter from "../utils/NumberCounter";
+ 
 import DivAnimateY from "../utils/DivAnimateY";
 
 const CounterSection = () => {

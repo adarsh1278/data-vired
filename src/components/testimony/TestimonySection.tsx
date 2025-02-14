@@ -1,6 +1,10 @@
+ 'use client'
 import { testimonyData } from "../../data/data";
+ 
 import { TestimonialType } from "../../types";
+ 
 import { Swiper, SwiperSlide } from "swiper/react";
+ 
 import DivAnimateX from "../utils/DivAnimateX";
 type Props = {
   style?: string;

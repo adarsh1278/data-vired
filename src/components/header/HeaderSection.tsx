@@ -1,5 +1,8 @@
+ 'use client'
 import { useEffect, useRef, useState } from "react";
+ 
 import MainNav from "../navigation/MainNav";
+ 
 import { Link } from "react-router-dom";
 
 const HeaderSection = () => {

@@ -1,5 +1,8 @@
+ 'use client'
 import { toggleModalOpen } from "../../redux/features/videoModalSlice";
+ 
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+ 
 import VideoModal from "../modal/VideoModal";
 
 const VideoSection2 = () => {

@@ -1,3 +1,4 @@
+ 'use client'
 import DivAnimateX from "../utils/DivAnimateX";
 
 const BlogTags = () => {
