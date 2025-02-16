@@ -33,8 +33,8 @@ Version      : 1.0
 @import "bootstrap/dist/css/bootstrap.min.css";
 @font-face {
   font-family: 'Themify'; 
-  src: url('../app/styles/fontawesome/themify.woff') format('woff'),
-       url('../app/styles/fontawesome/themify.ttf') format('truetype');
+  src: url('../styles/fontawesome/themify.woff') format('woff'),
+       url('../styles/fontawesome/themify.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;  
 }

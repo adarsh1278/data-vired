@@ -3,6 +3,10 @@ import  "bootstrap/dist/css/bootstrap.min.css"
 import { Provider } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import './globals.css'
+import "swiper/css";
+import "../styles/fontawesome/font-awesome.css";
+import "../styles/fontawesome/themify-icons.css";
+import "../styles/css/style.css";
 import { useEffect, useState } from "react";
 import store from "@/redux/store";
 
