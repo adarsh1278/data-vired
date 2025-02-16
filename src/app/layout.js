@@ -1,28 +1,30 @@
-import localFont from 'next/font/local';
-import './globals.css';
+"use client";
 
-// Load local fonts
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
-});
 
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
-});
+import "./globals.css";
+import { Provider } from "react-redux";
+import { ToastContainer } from "react-toastify";
+
+import { useEffect, useState } from "react";
+import store from "@/redux/store";
+
 
 export default function RootLayout({ children }) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Provider >
+      <body className={`antialiased`}>
+        <Provider store={store}>
+          <ToastContainer />
           {children}
-          <div>
-            hi
-          </div>
         </Provider>
       </body>
     </html>

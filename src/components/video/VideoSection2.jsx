@@ -1,11 +1,12 @@
 'use client'
+import { useDispatch, useSelector } from "react-redux";
 import { toggleModalOpen } from "../../redux/features/videoModalSlice";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+// import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import VideoModal from "../modal/VideoModal";
 
 const VideoSection2 = () => {
-  const dispatch = useAppDispatch();
-  const openModal = useAppSelector((state) => state.videoModal.isModalOpen);
+  const dispatch = useDispatch();
+  const openModal = useSelector((state) => state.videoModal.isModalOpen);
 
   const handleVideoClick = (e) => {
     e.preventDefault();
