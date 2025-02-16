@@ -1,3 +1,4 @@
+'use client'
 import AboutSection from "../../components/about/AboutSection";
 import BreadCrumbSection from "../../components/breadcrumb/BreadCrumbSection";
 import CategorySection from "../../components/category/CategorySection";
@@ -10,12 +11,19 @@ const AboutPage = () => {
   return (
     <main className="eduleb-about-main">
       <Layout>
-        <BreadCrumbSection currentPage="About" />
+        {/* <BreadCrumbSection currentPage="About" />
         <CategorySection />
         <AboutSection />
         <VideoSection2 />
         <CounterSection />
-        <FreeCourseSection />
+        
+        <FreeCourseSection /> */}
+        <div>
+        <BreadCrumbSection currentPage="About" />
+        <CategorySection />
+          <AboutSection />
+          <VideoSection2 />
+        </div>
        
       </Layout>
     </main>
