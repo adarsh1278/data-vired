@@ -1,4 +1,3 @@
-'use client'
 import Link from "next/link";
 import { blogData } from "../../data/data";
 import DivAnimateY from "../utils/DivAnimateY";
@@ -13,7 +12,7 @@ const BlogSection = ({ showHeader, endIndex }) => {
             <p>
               We offer a brand new approach to the most basic learning
               paradigms. Choose from a wide range of learning options and gain
-              new skills! Our school is know.
+              new skills! Our school is known for it.
             </p>
           </div>
         )}
@@ -27,9 +26,11 @@ const BlogSection = ({ showHeader, endIndex }) => {
                     {item.date} | <Link href="/blog">{item.category}</Link>
                   </span>
                   <h2>
-                    <Link href={`/blog/${item.slug}`}>{item.title}</Link>
+                    <Link href={item.slug ? `/blog/${item.slug}` : "#"}>
+                      {item.title}
+                    </Link>
                   </h2>
-                  <Link className="btn_one" to={`/blog/${item.slug}`}>
+                  <Link href={item.slug ? `/blog/${item.slug}` : "#"} className="btn_one">
                     Read More <i className="ti-arrow-top-right"></i>
                   </Link>
                 </div>

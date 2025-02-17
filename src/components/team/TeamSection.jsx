@@ -1,7 +1,6 @@
 'use client'
 import Link from "next/link";
 import { teamData } from "../../data/data";
-import { TeamType } from "../../types";
 import DivAnimateY from "../utils/DivAnimateY";
 
 const TeamSection = () => {
@@ -22,15 +21,17 @@ const TeamSection = () => {
               <div className="our-team">
                 <div className="team-content">
                   <Link href={`/instructor/${item.slug}`}>
-                    <img src={item.img} alt="" />
+                    <img src={item.img} alt={item.name} />
                   </Link>
                   <ul className="social-links">
                     {item.socials.map((social, index) => (
                       <li key={index}>
                         <Link
-                          to={social.url}
+                          href={social.url || '#'} // Added fallback URL
                           className={social.socialMedia}
-                        ></Link>
+                        >
+                          <span className="sr-only">{social.socialMedia}</span>
+                        </Link>
                       </li>
                     ))}
                   </ul>

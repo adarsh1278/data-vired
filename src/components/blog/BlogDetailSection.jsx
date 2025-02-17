@@ -1,5 +1,5 @@
 'use client'
-import { BlogType } from "../../types";
+
 import BlogDetails from "./BlogDetails";
 import BlogAuthor from "./BlogAuthor";
 import BlogComments from "./BlogComments";

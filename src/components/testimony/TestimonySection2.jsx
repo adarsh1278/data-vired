@@ -1,6 +1,5 @@
 'use client'
 import { testimonyData } from "../../data/data";
-import { TestimonialType } from "../../types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import DivAnimateX from "../utils/DivAnimateX";
 import DivAnimateY from "../utils/DivAnimateY";
@@ -11,7 +10,7 @@ const TestimonySection2 = ({ style }) => {
       <div className="container">
         <DivAnimateX position={-60} className="section-title">
           <h2>
-            What Student’s Say To Do <br />
+            What Student's Say To Do <br />
             Their Online Course
           </h2>
         </DivAnimateX>
@@ -31,9 +30,9 @@ const TestimonySection2 = ({ style }) => {
                 },
               }}
             >
-              {testimonyData.map(() => (
+              {testimonyData.map((item) => (
                 <SwiperSlide className="testimonial" key={item.id}>
-                  <img src="assets/img/quote.png" alt="" />
+                  <img src="assets/img/quote.png" alt="Quote" />
                   <div className="testimonial_content">
                     <i className="ti-star"></i>
                     <i className="ti-star"></i>
@@ -43,7 +42,7 @@ const TestimonySection2 = ({ style }) => {
                     <p>{item.testimony}</p>
                   </div>
                   <div className="testi_pic_title">
-                    <img src={item.img} alt="img" />
+                    <img src={item.img} alt={`${item.name}'s profile`} />
                     <h4>{item.name}</h4>
                     <p>{item.company}</p>
                   </div>

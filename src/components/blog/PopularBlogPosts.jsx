@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { blogData } from "../../data/data";
-import { BlogType } from "../../types";
+
 import DivAnimateX from "../utils/DivAnimateX";
 
 const PopularBlogPosts = () => {

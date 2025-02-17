@@ -1,6 +1,6 @@
 'use client'
 import { pricingData } from "../../data/data";
-import { PricingType } from "../../types";
+
 import DivAnimateY from "../utils/DivAnimateY";
 
 const PricingSection = () => {

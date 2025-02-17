@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { courseData } from "../../data/data";
-import { CourseType } from "../../types";
+
 import DivAnimateX from "../utils/DivAnimateX";
 import DivAnimateY from "../utils/DivAnimateY";
 

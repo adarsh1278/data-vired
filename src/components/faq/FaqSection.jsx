@@ -1,6 +1,6 @@
 'use client'
 import { faqData } from "../../data/data";
-import { FaqType } from "../../types";
+
 import { useState } from "react";
 import DivAnimateX from "../utils/DivAnimateX";
 

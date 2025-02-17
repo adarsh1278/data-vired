@@ -35,7 +35,7 @@ const PromoSection = () => {
                   for you
                 </li>
               </ul>
-              <Link className="btn_one" to="/course">
+              <Link className="btn_one" href="/course">
                 View All Courses <i className="ti-arrow-top-right"></i>
               </Link>
             </div>
@@ -45,7 +45,7 @@ const PromoSection = () => {
               <img
                 src="assets/img/about3.png"
                 className="img-fluid"
-                alt="image"
+                alt="About us"
               />
               <div className="home_ps2">
                 <span className="ti-book"></span>

@@ -69,7 +69,7 @@ const AuthForm = ({ login }) => {
           </a>
         ) : (
           <div className="alternative-auth">
-            <Link className="direct-to-login" to="/login">
+            <Link className="direct-to-login" href="/login">
               Click to Sign in
             </Link>
           </div>

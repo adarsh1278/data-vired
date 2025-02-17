@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { courseData } from "../../data/data";
-import { CourseType } from "../../types";
+
 
 
 const CourseDetailSidebar = ({ fee }) => {

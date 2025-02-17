@@ -56,10 +56,10 @@ const HeaderSection = () => {
           </div>
 
           <div className="col-20 d-none d-lg-block text-end align-self-center header-action-container">
-            <Link href="/sign-in" className="header-btn">
+            <Link href="/Signinpage" className="header-btn">
               Sign In
             </Link>
-            <Link href="/sign-up" className="btn_one">
+            <Link href="/Signuppage" className="btn_one">
               Sign Up
             </Link>
           </div>
