@@ -55,7 +55,7 @@ const MainNav = ({ mobileMenuOpen }) => {
         <li className="menu-item-has-children" role="button" onClick={() => toggleNav("blog")}>
           <a>Blog</a>
           <ul className={`subdropdown-menu ${activeNav === "blog" ? "show" : ""}`}>
-            <li><Link href="/BlogDetail">Blog</Link></li>
+            <li><Link href="/BlogDetails">Blog</Link></li>
             <li><Link href="/Blogpage">Blog Details</Link></li>
           </ul>
         </li>
