@@ -40,5 +40,5 @@ const AboutPage = () => {
     </main>
   );
 };
-
+// writing this for pull request
 export default AboutPage;
