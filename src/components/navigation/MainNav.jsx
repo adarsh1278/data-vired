@@ -18,7 +18,7 @@ const MainNav = ({ mobileMenuOpen }) => {
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Check on initial render
+    handleResize(); 
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -44,8 +44,8 @@ const MainNav = ({ mobileMenuOpen }) => {
         <li className="menu-item-has-children" role="button" onClick={() => toggleNav("pages")}>
           <a>Pages</a>
           <ul className={`subdropdown-menu ${activeNav === "pages" ? "show" : ""}`}>
-            <li><Link href="/Instructor">Instructor</Link></li>
-            <li><Link href="/Instructorpage">Instructor Details</Link></li>
+            <li><Link href="/Instruction">Instructor</Link></li>
+            <li><Link href="/Instructionpage">Instructor Details</Link></li>
             <li><Link href="/Pricingpage">Pricing Plan</Link></li>
             <li><Link href="/Faq">Faq Page</Link></li>
             <li><Link href="/signinpage">Sign In</Link></li>
