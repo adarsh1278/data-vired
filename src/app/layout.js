@@ -42,47 +42,55 @@ const ScrollToTop = () => {
 };
 
 export default function RootLayout({ children }) {
-  const [isClient, setIsClient] = useState(false);
+  // const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true);
+  // useEffect(() => {
+  //   setIsClient(true);
 
-    // Enable smooth scrolling
-    document.documentElement.style.scrollBehavior = 'smooth';
+  //   // Enable smooth scrolling
+  //   document.documentElement.style.scrollBehavior = 'smooth';
 
-    // Handle anchor link clicks
-    const handleAnchorClick = (e) => {
-      const href = e.target.closest('a')?.getAttribute('href');
-      if (href?.startsWith('#')) {
-        e.preventDefault();
-        const element = document.querySelector(href);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    };
+  //   // Handle anchor link clicks
+  //   const handleAnchorClick = (e) => {
+  //     const href = e.target.closest('a')?.getAttribute('href');
+  //     if (href?.startsWith('#')) {
+  //       e.preventDefault();
+  //       const element = document.querySelector(href);
+  //       if (element) {
+  //         element.scrollIntoView({ behavior: 'smooth' });
+  //       }
+  //     }
+  //   };
 
-    document.addEventListener('click', handleAnchorClick);
+  //   document.addEventListener('click', handleAnchorClick);
 
-    return () => {
-      document.documentElement.style.scrollBehavior = 'auto';
-      document.removeEventListener('click', handleAnchorClick);
-    };
-  }, []);
+  //   return () => {
+  //     document.documentElement.style.scrollBehavior = 'auto';
+  //     document.removeEventListener('click', handleAnchorClick);
+  //   };
+  // }, []);
 
-  if (!isClient) {
-    return null;
-  }
+  // if (!isClient) {
+  //   return null;
+  // }
 
   return (
     <html lang="en">
       <body>
+      <div className="flex  w-full  justify-center gap-10 items-center bg-white border-t border-gray-300 px-4 py-2">
+          <span className="text-gray-700 text-sm">WhatsApp no - XXXXXXXXX</span>
+          <button className="bg-orange-500 text-white text-sm font-medium px-3 py-1 rounded hover:bg-orange-600">
+            Request call back
+          </button>
+        </div>
         <Provider store={store}>
+       
           <ToastContainer />
           <div className="main-wrapper">
+         
             {children}
           </div>
-          <ScrollToTop />
+          {/* <ScrollToTop /> */}
         </Provider>
       </body>
     </html>

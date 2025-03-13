@@ -44,8 +44,8 @@ const AboutSection = () => {
                 </li>
               </ul>
               <Link className="btn_one" href="/course">
-  View All Courses <i className="ti-arrow-top-right"></i>
-</Link>
+                View All Courses <i className="ti-arrow-top-right"></i>
+              </Link>
             </div>
           </DivAnimateX>
         </div>

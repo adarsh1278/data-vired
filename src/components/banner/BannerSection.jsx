@@ -4,54 +4,36 @@ import NumberCounter from "../utils/NumberCounter";
 
 const BannerSection = () => {
   return (
-    <section
-      className="overflow-hidden home_bg hb_height"
-      style={{
-        backgroundImage: "url(assets/img/bg/home-bg.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-      }}
-    >
-      <div className="container">
-        <div className="row">
-          <DivAnimateX position={-60} className="col-lg-6 col-12">
-            <div className="hero-text ht_top">
-              <h1>
-                <span>Smart Study</span> Where Knowledge Meets the Web
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                consectetur adipiscing elit tempor ut labore
-              </p>
-            </div>
-            <div className="home_sb">
-              <form action="#" className="banner_subs">
-                <input
-                  type="text"
-                  className="form-control home_si"
-                  placeholder="Search your course here"
-                  required
-                />
-                <button type="button" className="subscribe__btn">
-                  Search <i className="fa fa-paper-plane-o"></i>
-                </button>
-              </form>
+    <section className="overflow-hidden relative pb-0 mb-0">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row items-center">
+          <DivAnimateX position={-60} className="w-full md:w-1/2 p-4 md:p-6 flex flex-col justify-center z-10">
+            <p className="text-orange-500 font-medium mb-2">Learn from Experts, Master the Future</p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">Your Pathway to a High-Paying Career Starts Here</h1>
+            <p className="text-gray-600 mb-8">
+              Unlock 100% placement support and step into the most in-demand roles of the 21st century with our structured, interview-focused training.
+            </p>
+            <div>
+              <button className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md transition-colors">
+                Explore courses
+              </button>
             </div>
           </DivAnimateX>
-          <div className="col-lg-6 d-none d-lg-block">
-            <div className="hero-text-img">
+
+          <DivAnimateX position={60} className="w-full md:w-1/2 flex justify-center items-center m-0 p-0">
+            <div className="relative w-full lg:w-120 overflow-visible h-auto">
+              {/* Circular background for the image */}
+
               <img
-                src="assets/img/home-img2.png"
-                className="img-fluid"
-                alt=""
+                src="/lady.png"
+                alt="Student with laptop"
+                className="relative z-10 w-full h-auto object-contain"
               />
-              <div className="home_ps">
-                <span className="ti-user"></span>
-                <NumberCounter number={4500} durationToComplete={3} icon="+" />
-                <p>Active student</p>
-              </div>
+
+              {/* Floating card - 2K+ Projects */}
+
             </div>
-          </div>
+          </DivAnimateX>
         </div>
       </div>
     </section>
