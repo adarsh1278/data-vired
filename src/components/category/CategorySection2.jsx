@@ -4,20 +4,19 @@ import DivAnimateY from "../utils/DivAnimateY";
 const CategorySection2 = () => {
   return (
     <section
-      className="overflow-hidden top_cat__area section-padding"
+      className="overflow-hidden top_cat__area section-padding bg-[#403685] text-white"
       style={{
-        backgroundImage: "url(assets/img/bg/section-2.jpg)",
+        // backgroundImage: "url(assets/img/bg/section-2.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center center",
+        backgroundColor: "#403685",
       }}
     >
       <DivAnimateY className="container">
         <div className="text-center section-title">
-          <h2>Find out by popular Categories</h2>
+          <h2 className=" text-white">Multinational Hiring Partner</h2>
           <p>
-            We offer a brand new approach to the most basic learning paradigms.
-            Choose from a wide range of learning options and gain new skills!
-            Our school is know.
+            We ofkr a brand new spprcech to thes moet basic jearring from a wide reange of leariing experiance
           </p>
         </div>
         <div className="row">

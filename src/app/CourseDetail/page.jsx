@@ -1,5 +1,5 @@
 'use client'
-import { useParams } from "react-router-dom";
+import { useParams } from "next/navigation";
 import BreadCrumbSection from "../../components/breadcrumb/BreadCrumbSection";
 import CourseDetailSection from "../../components/course/CourseDetailSection";
 import Layout from "../../components/layout/Layout";

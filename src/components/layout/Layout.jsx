@@ -7,7 +7,9 @@ import FooterCopyright from "../footer/FooterCopyright";
 const Layout = ({ children }) => {
   return (
     <>
+
       <HeaderSection />
+
       {children}
       <FooterSection />
       <FooterCopyright />

@@ -209,6 +209,29 @@ const teamData = [
     course: 7,
     students: 24,
   },
+  {
+    id: 5,
+    img: "/assets/img/team/team4.jpg",
+    socials: [
+      {
+        url: "#",
+        socialMedia: "ti-twitter",
+      },
+      {
+        url: "#",
+        socialMedia: "ti-linkedin",
+      },
+      {
+        url: "#",
+        socialMedia: "ti-facebook",
+      },
+    ],
+    name: "Noah Brown",
+    slug: "noah-brown",
+    role: "Web developer",
+    course: 7,
+    students: 24,
+  },
 ];
 
 const pricingData = [
@@ -339,6 +362,81 @@ const blogData = [
     slug: "education-is-about-create-leaders-for-tomorrow",
   },
 ];
+const alumniData = [
+  {
+    id: 1,
+    name: "Mukund Thakre",
+    date: "March 2020",
+    preIncubation: "Asahi Indo Glass",
+    postIncubation: "InCompass",
+    role: "Machine Learning Engineer",
+    image: "https://static.vecteezy.com/system/resources/previews/006/487/917/original/man-avatar-icon-free-vector.jpg",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    date: "April 2021",
+    preIncubation: "TechStart",
+    postIncubation: "InnoDrive",
+    role: "Full Stack Developer",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 3,
+    name: "John Doe",
+    date: "May 2019",
+    preIncubation: "StartX",
+    postIncubation: "NextGen Labs",
+    role: "Data Scientist",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 4,
+    name: "Sara Lee",
+    date: "June 2022",
+    preIncubation: "Alpha Incubation",
+    postIncubation: "Beta Ventures",
+    role: "Product Manager",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 5,
+    name: "Arun Patel",
+    date: "January 2020",
+    preIncubation: "Green Start",
+    postIncubation: "BlueSky Tech",
+    role: "DevOps Engineer",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 6,
+    name: "Emily Johnson",
+    date: "March 2021",
+    preIncubation: "Founders Lab",
+    postIncubation: "Rocket Labs",
+    role: "UI/UX Designer",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 7,
+    name: "Raj Kumar",
+    date: "July 2022",
+    preIncubation: "IdeasX",
+    postIncubation: "ScaleUp Hub",
+    role: "Software Engineer",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    id: 8,
+    name: "Nina Carter",
+    date: "August 2019",
+    preIncubation: "Incepto",
+    postIncubation: "Elevate Tech",
+    role: "Marketing Specialist",
+    image: "https://via.placeholder.com/150",
+  },
+];
+
 
 export {
   partnerLogos,
@@ -348,4 +446,5 @@ export {
   pricingData,
   faqData,
   blogData,
+  alumniData
 };
