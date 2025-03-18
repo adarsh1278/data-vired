@@ -5,7 +5,7 @@ import { useState } from "react";
 import DivAnimateX from "../utils/DivAnimateX";
 
 const FaqSection = () => {
-  const [openAccordion, setOpenAccordion] = useState<number>(1);
+  const [openAccordion, setOpenAccordion] = useState(1);
   const toggleAccordion = (accodionId) => {
     setOpenAccordion(accodionId);
   };
@@ -17,9 +17,8 @@ const FaqSection = () => {
             <div className="custom-accordion" id="custom-accordionExample">
               {faqData.map((item) => (
                 <div
-                  className={`custom-accordion-item  ${
-                    openAccordion === item.id ? "show" : ""
-                  }`}
+                  className={`custom-accordion-item  ${openAccordion === item.id ? "show" : ""
+                    }`}
                   key={item.id}
                 >
                   <button
