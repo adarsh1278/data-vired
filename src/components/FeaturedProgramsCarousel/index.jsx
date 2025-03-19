@@ -101,7 +101,7 @@ const FeaturedProgramsCarousel = () => {
 
     return (
         <div className="w-full py-8 ">
-            <div className="container mx-auto px-4">
+            <div className=" w-full mx-auto px-4">
                 <DivAnimateX
                     duration={0.8}
                     position={-30}

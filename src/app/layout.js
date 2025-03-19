@@ -9,6 +9,7 @@ import "../styles/fontawesome/themify-icons.css";
 import "../styles/css/style.css";
 import { useEffect, useState } from "react";
 import store from "@/redux/store";
+import HeaderSection from "@/components/header/HeaderSection";
 
 // Scroll to Top Component
 const ScrollToTop = () => {
@@ -77,16 +78,31 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <div className="flex  w-full  justify-center gap-10 items-center bg-white border-t border-gray-300 px-4 py-2">
-          <span className="text-gray-700 text-sm">WhatsApp no - XXXXXXXXX</span>
-          <button className="bg-orange-500 text-white text-sm font-medium px-3 py-1 rounded hover:bg-orange-600">
-            Request call back
-          </button>
-        </div>
+   
         <Provider store={store}>
        
           <ToastContainer />
-          <div className="main-wrapper">
+        
+          <div className=" w-full  h-fit">
+            <div className=" w-full h-[40px]  fixed  top-0 bg-white z-[999] ">
+              <div className=" w-full h-full  flex flex-row  justify-center items-center">
+             <div className=" w-fit h-[30px]  flex flex-row ">
+             <div className="flex items-center px-3 mr-4">
+        <span className="text-sm text-gray-700">WhatsApp no: XXXXXXXX</span>
+      </div>
+      <button className="  ml-6 px-3 w-fit   rounded-md  h-full    text-center text-xs font-medium text-white bg-orange-500 hover:bg-orange-600 transition-colors">
+         Request Callback
+      </button>
+             </div>
+
+              </div>
+            </div>
+         <HeaderSection/>
+            
+           
+
+         
+   
          
             {children}
           </div>

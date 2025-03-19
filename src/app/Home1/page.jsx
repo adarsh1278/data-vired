@@ -29,7 +29,7 @@ import WebinarSection from "@/components/webinar";
 const HomePage1 = () => {
   return (
     <main className="eduleb-home-1-main">
-      <HeaderSection />
+      {/* <HeaderSection /> */}
       <BannerSection />
       <CounterSection />
       <PartnerSection />
