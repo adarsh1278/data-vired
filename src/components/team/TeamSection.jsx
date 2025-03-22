@@ -49,7 +49,7 @@ const TeamCarousel = () => {
 
   return (
     <section className="overflow-hidden team_area section-padding">
-      <DivAnimateY className="container">
+      <DivAnimateY className="  sm:px-4">
         <div className="text-center section-title">
           <h2>Meet our Instructors</h2>
           <p>
@@ -66,12 +66,12 @@ const TeamCarousel = () => {
             className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md transition-opacity ${!canScrollLeft ? 'opacity-40 cursor-not-allowed' : 'hover:bg-gray-100'}`}
             aria-label="Scroll left"
           >
-            <ChevronLeftIcon className="h-6 w-6 text-gray-700" />
+            <ChevronLeftIcon className="h-10  w-8 text-gray-700" />
           </button>
 
           <div
             ref={carouselRef}
-            className="flex overflow-x-auto gap-4 py-4 mx-10 scrollbar-hide snap-x"
+            className="flex overflow-x-auto  gap-4 py-4 mx-[4vw] scrollbar-hide snap-x"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {teamData.map((item, index) => (
@@ -127,7 +127,7 @@ const TeamCarousel = () => {
             className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md transition-opacity ${!canScrollRight ? 'opacity-40 cursor-not-allowed' : 'hover:bg-gray-100'}`}
             aria-label="Scroll right"
           >
-            <ChevronRightIcon className="h-6 w-6 text-gray-700" />
+            <ChevronRightIcon className="h-10 w-8 text-gray-700" />
           </button>
         </div>
       </DivAnimateY>
