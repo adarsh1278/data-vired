@@ -28,7 +28,7 @@ const MainNav = ({ mobileMenuOpen }) => {
       <ul className="main-nav-items ">
 
         <li><Link href="/about" className="  text-[##80879F]">About</Link></li>
-        <li><Link href="/about">Carrier Service</Link></li>
+        <li><Link href="/about">Career Service</Link></li>
         <li><Link href="/about">Webinar</Link></li>
         <li><Link href="/about">Blog</Link></li>
         <li><Link href="/about">Contact us</Link></li>

@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
             <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
               <DivAnimateX duration={1} position={0} className="w-80">
                 <img 
-                  src="https://s3-alpha-sig.figma.com/img/04fe/1f11/ef2f6526385fa05c0f5541dac5c702f1?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Z-m93VadHtSdfQVs89bauOou52FOPT7cPhXxya39A4uio8pRRN9IOekTpfFY8UP-R-0~5UqIe5lzbQL5-Dcp9uldxzOnpqVcZwcY~qpujI2XR8CrPWwpm~Prncad~dwZBwtiIKxkGnQjlL3tIaqT337RJKCpNQwqxHmZ9W26SEcjVSlWoGPZcAgK9-qcR5xTqoVAIDkjbSEdIpNx~kUWzd-jKM70jdzr-grD3tx-4eBo0idwWuRS6btaNy6G7pokTcRQ3kh2OtQWrU7IvKvrQ58pNN59woRu~46OvC~Z2U8jjJRK4b7uWiAQtt59OfPZFJ1ESoYGnASNxJww1QDSDg__"
+                  src="/choseus.png"
                   alt="Successful student giving thumbs up"
                   className="h-[400px] object-cover"
                 />
@@ -140,13 +140,13 @@ const WhyChooseUs = () => {
               position={features[1].position}
             />
             
-            {/* Central image with decorative elements */}
+            
             <div className="relative py-12">
              
               
               <DivAnimateX duration={1} position={0} className="relative z-10 mx-auto w-48">
                 <img 
-                  src="/api/placeholder/250/300"
+                  src="/choseus.png"
                   alt="Successful student giving thumbs up"
                   className="w-full object-cover mx-auto rounded-lg"
                 />

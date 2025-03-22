@@ -350,7 +350,7 @@ ul {
   align-items: center;
   position: fixed;
   background: #fff;
-  top: 40px;
+  top: 30px;
   /* Add 30px gap from top */
   left: 0;
   right: 0;
@@ -366,7 +366,7 @@ ul {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=98)";
   filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=98)";
   width: 100%;
-  top: 40px;
+  top: 30px;
   /* Adjust this as well */
   -webkit-animation: fadeInDown 800ms;
   -webkit-backface-visibility: hidden;

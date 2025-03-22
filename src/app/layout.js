@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
           <ToastContainer />
         
           <div className=" w-full  h-fit">
-            <div className=" w-full h-[40px]  fixed  top-0 bg-white z-[999] ">
+            <div className=" w-full h-[31px]  fixed  top-0 bg-white z-[999] ">
               <div className=" w-full h-full  flex flex-row  justify-center items-center">
              <div className=" w-fit h-[30px]  flex flex-row ">
              <div className="flex items-center px-3 mr-4">

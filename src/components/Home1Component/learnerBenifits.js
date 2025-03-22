@@ -8,7 +8,7 @@ const LearnerBenefit = () => {
     <section className="w-full  py-5 relative overflow-hidden text-white" style={{
       background: "linear-gradient(to right, #403685, #010101)"
     }}>
-      <div className="container mx-auto  px-10 md:px-16 flex flex-col md:flex-row items-center justify-between">
+      <div className="container mx-auto  px-10 md:px-12 flex flex-col md:flex-row items-center justify-between">
         {/* Left content */}
         <DivAnimateX className="w-full md:w-1/2 text-white mb-10 md:mb-0" duration={0.8} position={-50}>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 ml-8 text-white">Learner Benefit</h2>

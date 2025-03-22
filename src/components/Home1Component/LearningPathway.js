@@ -12,10 +12,10 @@ const LearningPathway = () => {
       <DivAnimateY 
         duration={0.5} 
         delay={index * 0.15}
-        className="max-w-md p-4 md:p-5 w-full md:w-[95%] lg:w-[90%]  md:h-[80%] py-6  md:py-16
-                 flex justify-center items-center flex-col bg-white rounded-lg drop-shadow-lg shadow-md mx-auto"
+        className="max-w-md p-4 md:p-5 w-full md:w-[95%] lg:w-[90%]   md:h-full    max-h-[17rem] py-6  md:py-16
+                 flex justify-center items-center flex-col bg-white rounded-lg  mx-auto shadow-2xl  drop-shadow-lg"
       >
-        <div className="flex items-center  mb-8">
+        <div className="flex items-center  w-full  justify-start  mb-4 ">
           <div className="flex-shrink-0">
             <div 
               className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center"
@@ -151,7 +151,7 @@ const LearningPathway = () => {
         </div>
 
         {/* Desktop view (horizontal zigzag flow) */}
-        <div className="hidden md:flex w-full h-[70vh] lg:h-[65vh] flex-row justify-between">
+        <div className="hidden md:flex w-full h-[70vh] lg:h-[65vh] flex-row justify-between px-[3vw]">
           {/* First column */}
           <div className="w-[25%] h-[65%]">
             <ExpertTeacherCard step={pathwayData.steps[0]} index={0} />
@@ -159,29 +159,30 @@ const LearningPathway = () => {
 
           {/* Second column */}
           <div className="w-[25%] h-[100%] flex flex-col">
-            <div className="w-full h-[35%] flex items-end justify-center">
-              <StyledArrow direction="down" index={1} />
-            </div>
+            <div className="w-full h-[35%] flex    pl-[3vw] items-center pt-3  ">
+                <img src ="Line1.png"/>
+            </div> 
             <div className="w-full h-[65%]">
               <ExpertTeacherCard step={pathwayData.steps[1]} index={1} />
             </div>
           </div>
 
           {/* Third column */}
-          <div className="w-[25%] h-[100%] flex flex-col-reverse">
-            <div className="w-full h-[35%] flex    justify-start items-start mb-9">
-              <StyledArrow direction="up" index={2} />
-            </div>
-            <div className="w-full h-[65%]">
+          <div className="w-[25%] h-[100%] flex flex-col  gap-0">
+          <div className="w-full h-[55%]">
               <ExpertTeacherCard step={pathwayData.steps[2]} index={2} />
             </div>
+          <div className="w-full h-[35%] flex     pl-[3vw] items-center pt-3  ">
+                <img src ="Line 2.png"/>
+            </div> 
+         
           </div>
 
           {/* Fourth column */}
           <div className="w-[25%] h-[100%] flex flex-col">
-            <div className="w-full h-[35%] flex items-end justify-center">
-              <StyledArrow direction="down" index={3} />
-            </div>
+          <div className="w-full h-[35%] flex    pl-[3vw] items-center pt-3  ">
+                <img src ="Line1.png"/>
+            </div> 
             <div className="w-full h-[65%] ">
               <ExpertTeacherCard step={pathwayData.steps[3]} index={3} />
             </div>

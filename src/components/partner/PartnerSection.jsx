@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const PartnerSection = ({ style }) => {
   return (
-    <div className={`partner-logo section-padding ${style} overflow-hidden`}>
-      <div className="container">
+    <div className={`partner-logo section-padding ${style} overflow-hidden 0 py-0 `}>
+      <div className=" px-[5vw] ">
         <DivAnimateY className="row part_bg g-2">
           <div className="col-md-4">
             <div className="partner_title">

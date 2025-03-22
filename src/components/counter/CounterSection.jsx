@@ -4,8 +4,8 @@ import DivAnimateY from "../utils/DivAnimateY";
 
 const CounterSection = () => {
   return (
-    <section className="overflow-hidden count_area counter_feature z-10 px-8">
-      <div className="container">
+    <section className="overflow-hidden count_area counter_feature z-10 px-8  mb-0">
+      <div className=" px-[3vw]">
         <DivAnimateY className="row g-4">
           <div className="col-lg-3 col-sm-6 col-xs-12">
             <div className="single-counter   text-white">

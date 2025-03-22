@@ -5,8 +5,8 @@ import DivAnimateX from '../utils/DivAnimateX';
 
 const SuccessBanner = () => {
     return (
-        <div className="w-full  px-10 mb-3">
-            <div className="container mx-auto px-4">
+        <div className="w-full  px-10 mb-3 ">
+            <div className="  mx-[.8vw] px-4">
                 <div className="relative bg-gradient-to-r from-[#403685] to-[#010101] rounded-lg overflow-hidden shadow-lg">
                     <div className="flex flex-col md:flex-row items-center justify-between   px-8 ">
                         {/* Left content - Text and button */}

@@ -123,12 +123,12 @@ const FeaturedProgramsCarousel = () => {
                         className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-1 shadow-md transition-opacity ${!canScrollLeft ? 'opacity-40 cursor-not-allowed' : 'hover:bg-gray-100'}`}
                         aria-label="Scroll left"
                     >
-                        <ChevronLeftIcon className="h-6 w-6 text-gray-700" />
+                        <ChevronLeftIcon className="h-10 w-9 text-gray-700" />
                     </button>
 
                     <div
                         ref={carouselRef}
-                        className="flex overflow-x-auto  gap-4 py-4  mx-10 scrollbar-hide snap-x "
+                        className="flex overflow-x-auto  gap-4 py-4  mx-14 scrollbar-hide snap-x  "
                         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                     >
                         {programsData.map((program, index) => (
@@ -151,10 +151,10 @@ const FeaturedProgramsCarousel = () => {
                     <button
                         onClick={scrollRight}
                         disabled={!canScrollRight}
-                        className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-1 shadow-md transition-opacity ${!canScrollRight ? 'opacity-40 cursor-not-allowed' : 'hover:bg-gray-100'}`}
+                        className={`absolute right-0 top-1/2 -translate-y-1/2 ml-5 z-10 bg-white rounded-full p-1 shadow-md transition-opacity ${!canScrollRight ? 'opacity-40 cursor-not-allowed' : 'hover:bg-gray-100'}`}
                         aria-label="Scroll right"
                     >
-                        <ChevronRightIcon className="h-6 w-6 text-gray-700" />
+                        <ChevronRightIcon className="h-10 w-9 text-gray-700" />
                     </button>
                 </div>
             </div>
